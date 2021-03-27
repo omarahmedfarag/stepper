@@ -1,0 +1,119 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 60%;
+    height: 250px;
+}
+.stepper
+{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stepper-holder
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.stepper-counter
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.count
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(236, 234, 234);
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boder
+{
+    border: 2px solid teal;
+    transition: 0.2s;
+}
+.progress-out
+{
+    width: 100%;
+    height: 5px;
+    background-color: #DDD;
+    position: relative;
+}
+.stepper-holder .progress-inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: 0.5s;
+    background-color: rgb(48, 141, 141);
+}
+.btns-group
+{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns-group button
+{
+    width: 100px;
+    background-color: teal;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btns-group button:hover
+{
+    background-color: rgb(15, 165, 165);
+}
+button
+{
+    outline: none;
+}
+
+button:disabled
+{
+    cursor: not-allowed;
+    background-color: rgb(203, 206, 206);
+}
+button:disabled:hover
+{
+    background-color: rgb(203, 206, 206);
+}
